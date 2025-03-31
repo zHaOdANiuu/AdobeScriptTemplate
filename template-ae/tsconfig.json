@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "ignoreDeprecations": "5.0",
+    "jsx": "preserve",
+    "noLib": true,
+    "useDefineForClassFields": false,
+    "removeComments": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "inc/index.d.ts",
+    "env.d.ts",
+    "index.tsx",
+    "src"
+  ]
+}
