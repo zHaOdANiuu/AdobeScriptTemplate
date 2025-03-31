@@ -23,9 +23,11 @@ function Player(parent: Container) {
       }
     },
     onPlay() {
-      if ($.global.__PlayerData__) return
+      if ($.global.__PlayerData__) {
+        return
+      }
       $.global.__PlayerData__ = data
-      app.scheduleTask(
+      handler = app.scheduleTask(
         `__PlayerData__.view.notify("onDraw");++__PlayerData__.currentFrame;if(__PlayerData__.currentFrame===__PlayerData__.framesLength-1)__PlayerData__.currentFrame=0;`,
         1000 / this.config.fps,
         true

@@ -58,11 +58,9 @@ function App(parent: Container) {
   bilibiliBtn.onClick = function () {
     urlOpen('https://space.bilibili.com/1909467646')
   }
+  root.window.addEventListener('mouseout', playerBg.onPause)
   root.window.addEventListener('mousemove', () => {
     playerBg.onPlay()
-  })
-  root.window.addEventListener('mouseout', () => {
-    playerBg.onPause()
   })
 }
 
